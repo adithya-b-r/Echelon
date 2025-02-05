@@ -25,22 +25,22 @@ export const Navbar = () => {
       </div>
 
       <div className="gap-8 text-2xl hidden md:flex">
-        <a className="tracking-wide" href="#home">Home</a>
-        <a className="tracking-wide" href="#about">About</a>
-        <a className="tracking-wide" href="#events">Events</a>
-        <a className="tracking-wide" href="#rules">Rules</a>
-        <a className="tracking-wide" href="#contact">Contact</a>
+        <a className="tracking-wide hover:text-lime-500 transition-all duration-300" href="#home">Home</a>
+        <a className="tracking-wide hover:text-lime-500 transition-all duration-300" href="#about">About</a>
+        <a className="tracking-wide hover:text-lime-500 transition-all duration-300" href="#events">Events</a>
+        <a className="tracking-wide hover:text-lime-500 transition-all duration-300" href="#rules">Rules</a>
+        <a className="tracking-wide hover:text-lime-500 transition-all duration-300" href="#contact">Contact</a>
       </div>
 
-      <i class='bx bx-menu text-4xl' onClick={() => setDisplay(!display)}></i>
+      <i class='bx bx-menu text-4xl md:hidden' onClick={() => setDisplay(!display)}></i>
 
       {display && (
         <div className="fixed top-16 bg-gray-950 w-[100%] h-fit -mx-6 flex flex-col items-center text-2xl">
-          <a onClick={hideNav} className="tracking-widest py-3" href="#home">Home</a>
-          <a onClick={hideNav} className="tracking-widest py-3" href="#about">About</a>
-          <a onClick={hideNav} className="tracking-widest py-3" href="#events">Events</a>
-          <a onClick={hideNav} className="tracking-widest py-3" href="#rules">Rules</a>
-          <a onClick={hideNav} className="tracking-widest py-3" href="#contact">Contact</a>
+          <a onClick={hideNav} className="tracking-widest py-3 hover:text-lime-500 transition-all duration-300" href="#home">Home</a>
+          <a onClick={hideNav} className="tracking-widest py-3 hover:text-lime-500 transition-all duration-300" href="#about">About</a>
+          <a onClick={hideNav} className="tracking-widest py-3 hover:text-lime-500 transition-all duration-300" href="#events">Events</a>
+          <a onClick={hideNav} className="tracking-widest py-3 hover:text-lime-500 transition-all duration-300" href="#rules">Rules</a>
+          <a onClick={hideNav} className="tracking-widest py-3 hover:text-lime-500 transition-all duration-300" href="#contact">Contact</a>
         </div>
       )}
     </nav>
