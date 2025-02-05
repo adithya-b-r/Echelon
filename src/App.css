@@ -13,6 +13,21 @@ body, html{
   height: 100%;
 }
 
-body{
-  padding-top: 10vh;
+body {
+  margin-top: 10vh;
+  background: linear-gradient(45deg, #ff7eb3, #ff6a00, #ff3f79, #ff9a9e, #6a4c93, #a1c4fd, #00c6ff, #ff5f6d);
+  background-size: 800% 800%;
+  animation: gradientAnimation 15s infinite linear;
+}
+
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
