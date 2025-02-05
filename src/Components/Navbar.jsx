@@ -10,7 +10,7 @@ export const Navbar = () => {
   return (
     <nav className="w-[100%] h-[10vh] bg-black text-white fixed top-0 left-0 flex items-center justify-between px-6 font-gochi">
       <div>
-        <h1 class="md:text-5xl text-[2.8rem] tracking-wide">
+        <h1 class="md:text-5xl text-[2.8rem] tracking-wider font-semibold">
           <span class="text-lime-500">E</span>
           <span class="text-green-700">c</span>
           <span class="text-yellow-500">h</span>
