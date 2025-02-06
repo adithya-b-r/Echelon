@@ -11,7 +11,7 @@ export const Home = () => {
       <FlipClockCountdown
         to={END_DATE}
         labels={['DAYS', 'HOURS', 'MINUTES', 'SECONDS']}
-        labelStyle={{ fontSize: 10, fontWeight: 500, textTransform: 'uppercase' }}
+        labelStyle={{ fontSize: 10, fontWeight: 500, textTransform: 'uppercase', color: "white" }}
         digitBlockStyle={{ width: 30, height: 50, fontSize: 30, backgroundColor: "white", color: "royalblue", border: "1px solid black" }}
         dividerStyle={{ color: 'white', height: 1 }}
         separatorStyle={{ color: 'white', size: '6px' }}
