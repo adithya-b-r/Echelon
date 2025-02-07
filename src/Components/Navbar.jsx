@@ -10,17 +10,17 @@ export const Navbar = () => {
   return (
     <nav className="w-[100%] h-[10vh] bg-black text-white fixed top-0 left-0 flex items-center justify-between px-6 font-gochi">
       <div>
-        <h1 class="md:text-5xl text-[2.5rem] tracking-wider font-semibold hover:scale-105 transition-all duration-500 cursor-pointer">
-          <span class="text-lime-500">E</span>
-          <span class="text-green-700">c</span>
-          <span class="text-yellow-500">h</span>
-          <span class="text-teal-500">e</span>
-          <span class="text-orange-600">l</span>
-          <span class="text-indigo-600">o</span>
-          <span class="text-pink-500">n</span>
-          <span class="text-amber-500">'</span>
-          <span class="text-blue-400">2</span>
-          <span class="text-blue-500">5</span>
+        <h1 className="md:text-5xl text-[2.5rem] tracking-wider font-semibold hover:scale-105 transition-all duration-500 cursor-pointer">
+          <span className="text-lime-500">E</span>
+          <span className="text-green-700">c</span>
+          <span className="text-yellow-500">h</span>
+          <span className="text-teal-500">e</span>
+          <span className="text-orange-600">l</span>
+          <span className="text-indigo-600">o</span>
+          <span className="text-pink-500">n</span>
+          <span className="text-amber-500">'</span>
+          <span className="text-blue-400">2</span>
+          <span className="text-blue-500">5</span>
         </h1>
       </div>
 
@@ -32,7 +32,7 @@ export const Navbar = () => {
         <a className="tracking-wide hover:text-lime-500 hover:scale-110 transition-all duration-300" href="#contact">Contact</a>
       </div>
 
-      <i class='bx bx-menu text-4xl md:hidden' onClick={() => setDisplay(!display)}></i>
+      <i className='bx bx-menu text-4xl md:hidden' onClick={() => setDisplay(!display)}></i>
 
       {display && (
         <div className="fixed top-16 bg-gray-950 w-[100%] h-fit -mx-6 flex flex-col items-center text-2xl">
