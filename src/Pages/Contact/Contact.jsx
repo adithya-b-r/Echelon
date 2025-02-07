@@ -1,6 +1,6 @@
 export const Contact = () => {
   return (
-    <div id="contact" className="w-full bg-gray-900 flex text-white px-6 py-10 justify-between">
+    <div id="contact" className="w-full bg-gray-900 md:flex md:flex-row flex-col text-white px-6 py-10 justify-between">
       <div className="mb-7 flex gap-1">
         <div className="text-xl font-semibold capitalize leading-[5vh]">
           <img className="w-24 h-16" src="/imgs/sdit.png" alt="" />
@@ -14,7 +14,7 @@ export const Contact = () => {
         </div>
       </div>
 
-      <div className="flex flex-col w-[30%] md:ml-24 leading-relaxed">
+      <div className="flex flex-col md:w-[30%] w-[100%] md:ml-24 ml-18 leading-relaxed">
         <h3 className="md:mt-4 mb-4 font-bold text-2xl">Quick Links</h3>
         <a className="tracking-wide hover:text-lime-500 hover:scale-110 transition-all duration-300" href="#home">Home</a>
         <a className="tracking-wide hover:text-lime-500 hover:scale-110 transition-all duration-300" href="#about">About</a>
