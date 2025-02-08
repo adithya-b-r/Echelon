@@ -7,13 +7,14 @@ import 'swiper/css/pagination';
 import './slider.css';
 
 import { EffectCoverflow, Pagination, Autoplay } from 'swiper/modules';
+import { useState } from 'react';
+import { Modal } from '../../Components/Modal';
 
 export default function Slider() {
+  const [openModal, setOpenModal] = useState(true);
 
   const photos = ["ecofindvate.jpeg", "econexa.jpg", "ecoadebturex.jpeg", "ecospark.jpg", "ecoicon.jpeg", "ecoquest.jpeg", "ecolead.jpeg", "spectra.jpeg", "zenblaze.jpeg", "aura.jpeg", "hidden.jpeg", "iris.jpeg", "inequest.jpeg", "advenger.jpeg"];
-
   const eventName = ["ECO FINOVATE", "ECONEXA", "ECO AdVentureX", "ECO SPARK", "ECO ICON", "ECO QUEST", "ECO LEAD", "SPECTRA", "ZENBLAZE", "AURA", "HIDDEN TRAIL", "IRIS", "CINEQUEST", "AD-VENGERS"];
-
   const eventCat = ["FINANCE", "HR", "Marketing", "Spark Tank", "BEST MANAGER", "BUSINESS QUIZ", "BMT", "BRAND RANGOLI", "CORPORATE WALK", "SPOT DANCE", "TREASURE HUNT", "PHOTOGRAPHY", "MOVIE QUIZ", "MAD AD"];
   return (
     <>
@@ -67,11 +68,13 @@ export default function Slider() {
                 ({eventCat[index]})
               </div>
 
-              <button className='px-4 py-2 bg-purple-500 text-sm text-white font-semibold border-2 border-white capitalize rounded-lg tracking-wider '>read more</button>
+              <button className='px-4 py-2 bg-purple-500 text-sm text-white font-semibold border-2 border-white capitalize rounded-lg tracking-wider '>Read more</button>
             </div>
           </SwiperSlide>
         ))}
       </Swiper>
+
+      {openModal && < Modal/>}
     </>
   );
 }
