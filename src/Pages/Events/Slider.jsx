@@ -92,7 +92,8 @@ export default function Slider() {
 
               <button
                 onClick={() => openModal(index)}
-                className='px-4 py-2 bg-purple-500 text-sm text-white font-semibold border-2 border-white capitalize rounded-lg tracking-wider'
+                style={{backgroundColor: `hsl(${index * 50}, 70%, 50%)`}}
+                className='px-4 py-2 text-sm text-white font-semibold border-2 border-white capitalize rounded-lg tracking-wider'
               >
                 Read more
               </button>

@@ -2,7 +2,7 @@ export const Rules = () => {
   return (
     <div id="rules" className="w-full min-h-screen bg-gray-900 bg-opacity-20 text-white py-16 px-6 flex flex-col items-center">
       <h1 className="text-5xl font-bold text-white mb-8 text-center">Rules & Regulations</h1>
-      
+
       <div className="max-w-4xl w-full space-y-6 px-4 md:px-8 lg:px-12">
         {/* Management Events Section */}
         <div className="bg-gray-800 bg-opacity-90 p-6 rounded-lg shadow-lg">
@@ -26,6 +26,9 @@ export const Rules = () => {
             <li>Unlimited participants per college.</li>
             <li>Open to both UG & PG students.</li>
             <li>Registration fee: <span className="text-yellow-300">Rs. 100 per participant.</span></li>
+            <li>Judges' and organizers' decisions are final and binding.</li>
+            <li>Use of unfair means will lead to immediate disqualification.</li>
+            <li>Participants must use team names allotted by the Echelon team for confidentiality.</li>
           </ul>
         </div>
       </div>
