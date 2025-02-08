@@ -1,4 +1,5 @@
 /** @type {import('tailwindcss').Config} */
+/** @type {import('tailwindcss').Config} */
 export default {
   content: [
     "./src/**/*.{js,jsx,ts,tsx}",
@@ -8,6 +9,7 @@ export default {
       fontFamily: {
         sans: ['sans-serif'],
         "gochi": ["Gochi Hand", "serif"],
+        "Poppins": ["Poppins", "serif"],
       },
     },
   },

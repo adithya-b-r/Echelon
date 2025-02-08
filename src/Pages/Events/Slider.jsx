@@ -1,21 +1,43 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
-
 import 'swiper/css';
 import 'swiper/css/effect-coverflow';
 import 'swiper/css/pagination';
-
 import './slider.css';
-
 import { EffectCoverflow, Pagination, Autoplay } from 'swiper/modules';
 import { useState } from 'react';
 import { Modal } from '../../Components/Modal';
 
 export default function Slider() {
-  const [openModal, setOpenModal] = useState(true);
+  const [isOpen, setIsOpen] = useState(false);
+  const [selectedEvent, setSelectedEvent] = useState(null);
 
-  const photos = ["ecofindvate.jpeg", "econexa.jpg", "ecoadebturex.jpeg", "ecospark.jpg", "ecoicon.jpeg", "ecoquest.jpeg", "ecolead.jpeg", "spectra.jpeg", "zenblaze.jpeg", "aura.jpeg", "hidden.jpeg", "iris.jpeg", "inequest.jpeg", "advenger.jpeg"];
-  const eventName = ["ECO FINOVATE", "ECONEXA", "ECO AdVentureX", "ECO SPARK", "ECO ICON", "ECO QUEST", "ECO LEAD", "SPECTRA", "ZENBLAZE", "AURA", "HIDDEN TRAIL", "IRIS", "CINEQUEST", "AD-VENGERS"];
-  const eventCat = ["FINANCE", "HR", "Marketing", "Spark Tank", "BEST MANAGER", "BUSINESS QUIZ", "BMT", "BRAND RANGOLI", "CORPORATE WALK", "SPOT DANCE", "TREASURE HUNT", "PHOTOGRAPHY", "MOVIE QUIZ", "MAD AD"];
+  const photos = [
+    "ecofindvate.jpeg", "econexa.jpg", "ecoadebturex.jpeg", "ecospark.jpg", "ecoicon.jpeg",
+    "ecoquest.jpeg", "ecolead.jpeg", "spectra.jpeg", "zenblaze.jpeg", "aura.jpeg",
+    "hidden.jpeg", "iris.jpeg", "inequest.jpeg", "advenger.jpeg"
+  ];
+
+  const eventName = [
+    "ECO FINOVATE", "ECONEXA", "ECO AdVentureX", "ECO SPARK", "ECO ICON",
+    "ECO QUEST", "ECO LEAD", "SPECTRA", "ZENBLAZE", "AURA",
+    "HIDDEN TRAIL", "IRIS", "CINEQUEST", "AD-VENGERS"
+  ];
+
+  const eventCat = [
+    "FINANCE", "HR", "Marketing", "Spark Tank", "BEST MANAGER",
+    "BUSINESS QUIZ", "BMT", "BRAND RANGOLI", "CORPORATE WALK", "SPOT DANCE",
+    "TREASURE HUNT", "PHOTOGRAPHY", "MOVIE QUIZ", "MAD AD"
+  ];
+
+  const openModal = (index) => {
+    setSelectedEvent({
+      name: eventName[index],
+      category: eventCat[index],
+      image: `/imgs/events/${photos[index]}`
+    });
+    setIsOpen(true);
+  };
+
   return (
     <>
       <Swiper
@@ -40,7 +62,7 @@ export default function Slider() {
         modules={[EffectCoverflow, Pagination, Autoplay]}
         className="mySwiper"
       >
-        {[...Array(14)].map((_, index) => (
+        {photos.map((_, index) => (
           <SwiperSlide key={index}>
             <div
               style={{
@@ -68,13 +90,18 @@ export default function Slider() {
                 ({eventCat[index]})
               </div>
 
-              <button className='px-4 py-2 bg-purple-500 text-sm text-white font-semibold border-2 border-white capitalize rounded-lg tracking-wider '>Read more</button>
+              <button
+                onClick={() => openModal(index)}
+                className='px-4 py-2 bg-purple-500 text-sm text-white font-semibold border-2 border-white capitalize rounded-lg tracking-wider'
+              >
+                Read more
+              </button>
             </div>
           </SwiperSlide>
         ))}
       </Swiper>
 
-      {openModal && < Modal/>}
+      {isOpen && selectedEvent && <Modal isOpen={isOpen} onClose={() => setIsOpen(false)} event={selectedEvent} />}
     </>
   );
 }
