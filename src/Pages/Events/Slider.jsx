@@ -113,7 +113,7 @@ export default function Slider() {
                 border: "5px ridge white"
               }}
             >
-              <div className='w-24 h-24 rounded-full bg-pink-500 overflow-hidden object-cover'>
+              <div className='w-24 h-24 rounded-full bg-pink-500 overflow-hidden object-cover' style={{ border: "#fff ridge 4px" }}>
                 <img src={`/imgs/events/${photos[index]}`} alt="" />
               </div>
               <div className='text-center'>
