@@ -20,9 +20,12 @@ export const Home = () => {
         Completed
       </FlipClockCountdown>
 
-      <button className="bg-blue-500 rounded-md md:w-[50%] w-[70%] h-12 font-gochi text-3xl text-white mt-16">
+      <button
+        onClick={() => window.location.href = "https://docs.google.com/forms/d/e/1FAIpQLSeYfzn7gJEKVF0oCa9igF8tFl7HQPALjJKyevpMxQS1ATEFzw/viewform?usp=header"}
+        className="bg-blue-500 rounded-md md:w-[50%] w-[70%] h-12 font-gochi text-3xl text-white mt-16">
         Register Now
       </button>
+
     </div>
   )
 }
