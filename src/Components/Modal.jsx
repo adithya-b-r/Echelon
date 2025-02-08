@@ -7,7 +7,7 @@ export const Modal = ({ isOpen, onClose, event }) => {
       onClick={onClose}
     >
       <div
-        className="bg-black bg-opacity-80 text-white h-fit md:h-[75vh] w-[90vw] max-w-3xl rounded-lg shadow-lg"
+        className="bg-black bg-opacity-80 text-white h-fit md:h-[85vh] w-[90vw] max-w-3xl rounded-lg shadow-lg"
         style={{ border: "5px ridge white" }}
         onClick={(e) => e.stopPropagation()}
       >
@@ -31,14 +31,18 @@ export const Modal = ({ isOpen, onClose, event }) => {
             {event.category}
           </h3>
 
+          <h3 className="mt-2 text-lg font-medium">
+            Participants: {event.participants}
+          </h3>
+
           <div className="w-full h-[40%] mt-5 px-5">
             <h3 className="text-xl font-semibold tracking-wider">
               General Rules:
             </h3>
             <div className="ml-4 text-lg tracking-wide mt-2">
-              <p>1. Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
-              <p>2. Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
-              <p>3. Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+              <p>1. Under Construction</p>
+              <p>2. Under Construction</p>
+              <p>3. Under Construction</p>
             </div>
           </div>
 
@@ -48,14 +52,12 @@ export const Modal = ({ isOpen, onClose, event }) => {
             </h3>
             <div className="ml-4 text-lg tracking-wide mt-2">
               <div className="flex flex-col md:flex-row justify-between md:px-5">
-                <div>
-                  <p className="font-semibold">Student Name</p>
-                  <p>+91 1234567890</p>
-                </div>
-                <div>
-                  <p className="font-semibold">Student Name</p>
-                  <p>+91 1234567890</p>
-                </div>
+                {event.coordinators.map((coordinator, i) => (
+                  <div key={i}>
+                    <p className="font-semibold">{coordinator.split(' - ')[0]}</p>
+                    <p>{coordinator.split(' - ')[1]}</p>
+                  </div>
+                ))}
               </div>
             </div>
           </div>
