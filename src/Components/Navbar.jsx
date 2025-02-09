@@ -41,6 +41,7 @@ export const Navbar = () => {
           <a onClick={hideNav} className="tracking-widest py-3 hover:text-lime-500 transition-all duration-300" href="#events">Events</a>
           <a onClick={hideNav} className="tracking-widest py-3 hover:text-lime-500 transition-all duration-300" href="#rules">Rules</a>
           <a onClick={hideNav} className="tracking-widest py-3 hover:text-lime-500 transition-all duration-300" href="#contact">Contact</a>
+          <a onClick={() => window.location.href = "/pdf/brochure.pdf"} className="tracking-widest py-3 hover:text-lime-500 transition-all duration-300">Download Brochure</a>
         </div>
       )}
     </nav>

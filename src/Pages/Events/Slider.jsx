@@ -17,50 +17,44 @@ export default function Slider() {
     "hidden.jpeg", "iris.jpeg", "inequest.jpeg", "advenger.jpeg"
   ];
 
-  const eventName = [
-    "ECO FINOVATE",
-    "ECONEXA",
-    "ECO AdVentureX",
-    "ECO SPARK",
-    "ECO ICON",
-    "ECO QUEST",
-    "ECO LEAD",
-    "SPECTRA",
-    "ZENBLAZE",
-    "AURA",
-    "HIDDEN TRAIL",
-    "IRIS",
-    "CINEQUEST",
-    "AD-VENGERS"
-  ];
+  // const eventName = [
+  //   "ECO FINOVATE",
+  //   "ECONEXA",
+  //   "ECO AdVentureX",
+  //   "ECO SPARK",
+  //   "ECO ICON",
+  //   "ECO QUEST",
+  //   "ECO LEAD",
+  //   "SPECTRA",
+  //   "ZENBLAZE",
+  //   "AURA",
+  //   "HIDDEN TRAIL",
+  //   "IRIS",
+  //   "CINEQUEST",
+  //   "AD-VENGERS"
+  // ];
 
   const eventDetails = [
-    ["ECO FINOVATE", "2", "Suneetha J - 8867648433", "Ramananda Shetty - 8088896489"],
-    ["ECO NEXA", "2", "Saksha S - 8867341607", "Meghashree - 9353911520"],
-    ["ECO AdVentureX", "2", "Prajith - 8296750765", "Sneha Lunkad - 78995 49820"],
-    ["ECO SPARK", "3", "Prathiksha Shetty - 8496016583", "Sangeetha P S - 9900687579"],
-    ["ECO ICON", "1", "Harsha - 6361574092", "Minaz - 9353615484"],
-    ["ECO QUEST", "2", "Nandana Ashok - 6235877850", "Aswathi T K - 9567997656"],
-    ["ECO LEAD", "3", " Nidhi Shetty - 6366162401", "Renita Dsouza - 9663347984"],
-    ["SPECTRA", "2", "Shreevatsa - 8660049762", "Sushmitha Amin - 9834063924"],
-    ["ZENBLAZE", "4-8", "Prajna Kundar - 9110464528", "03 AURA Raksha T - 9945138003"],
-    ["AURA", "1", "Prakrithiji - 8277091324"],
-    ["HIDDEN TRAIL", "2", "Akhilesh - 8105456871", "Puneeth G Mallaya - 8792009632"],
-    ["IRIS", "2", "Vishnu Ashok- 7034069185", "Naijin Johny- 9380727878"],
-    ["CINEQUEST", "2", "Hisham Hussain - 7338549200", "Abhin- 9731445371"],
-    ["AD-VENGERS", "4-6", "Nishimura - 7619531629", "Shruthi - 8431742695"],
-  ];
-
-  const eventCat = [
-    "FINANCE", "HR", "Marketing", "Spark Tank", "BEST MANAGER",
-    "BUSINESS QUIZ", "BMT", "BRAND RANGOLI", "CORPORATE WALK", "SPOT DANCE",
-    "TREASURE HUNT", "PHOTOGRAPHY", "MOVIE QUIZ", "MAD AD"
+    ["ECO FINOVATE", "2", "Suneetha J - 8867648433", "Ramananda Shetty - 8088896489", "FINANCE",],
+    ["ECO NEXA", "2", "Saksha S - 8867341607", "Meghashree - 9353911520", "HR",],
+    ["ECO AdVentureX", "2", "Prajith - 8296750765", "Sneha Lunkad - 78995 49820", "Marketing",],
+    ["ECO SPARK", "3", "Prathiksha Shetty - 8496016583", "Sangeetha P S - 9900687579", "Spark Tank",],
+    ["ECO ICON", "1", "Harsha - 6361574092", "Minaz - 9353615484", "BEST MANAGER",],
+    ["ECO QUEST", "2", "Nandana Ashok - 6235877850", "Aswathi T K - 9567997656", "BUSINESS QUIZ",],
+    ["ECO LEAD", "3", " Nidhi Shetty - 6366162401", "Renita Dsouza - 9663347984", "BMT",],
+    ["SPECTRA", "2", "Shreevatsa - 8660049762", "Sushmitha Amin - 9834063924", "BRAND RANGOLI",],
+    ["ZENBLAZE", "4-8", "Prajna Kundar - 9110464528", "03 AURA Raksha T - 9945138003", "CORPORATE WALK",],
+    ["AURA", "1", "Prakrithiji - 8277091324", "SPOT DANCE",],
+    ["HIDDEN TRAIL", "2", "Akhilesh - 8105456871", "Puneeth G Mallaya - 8792009632", "TREASURE HUNT",],
+    ["IRIS", "2", "Vishnu Ashok- 7034069185", "Naijin Johny - 9380727878", "PHOTOGRAPHY",],
+    ["CINEQUEST", "2", "Hisham Hussain - 7338549200", "Abhin - 9731445371", "MOVIE QUIZ",],
+    ["AD-VENGERS", "4-6", "Nishimura - 7619531629", "Shruthi - 8431742695", "MAD AD"],
   ];
 
   const openModal = (index) => {
     setSelectedEvent({
-      name: eventName[index],
-      category: eventCat[index],
+      name: eventDetails[index][0],
+      category: eventDetails[index][4],
       image: `/imgs/events/${photos[index]}`,
       participants: eventDetails[index][1],
       coordinators: eventDetails[index].slice(2)
@@ -117,8 +111,8 @@ export default function Slider() {
                 <img src={`/imgs/events/${photos[index]}`} alt="" />
               </div>
               <div className='text-center'>
-                {eventName[index]} <br />
-                ({eventCat[index]})
+                {eventDetails[index][0]} <br />
+                {eventDetails[index][4]}
               </div>
 
               <button
