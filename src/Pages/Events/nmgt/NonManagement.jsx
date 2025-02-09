@@ -12,12 +12,12 @@ export const NonManagement = () => {
           borderRadius: "10px",
           padding: "10px 20px"
         }}
-        className="tracking-widest text-5xl font-bold md:w-[80%] w-[95%] text-center"
+        className="tracking-widest text-4xl md:text-5xl font-bold md:w-[80%] w-[95%] text-center"
       >
         Cultural Events
       </h1>
 
-      <Slider start={7} end={13} type={1}/>
+      <Slider start={7} end={13} type={1} />
     </div>
   )
 }

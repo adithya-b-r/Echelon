@@ -12,7 +12,7 @@ export const Management = () => {
           borderRadius: "10px",
           padding: "10px 20px"
         }}
-        className="tracking-widest text-5xl font-bold md:w-[80%] w-[95%] text-center"
+        className="tracking-widest text-4xl md:text-5xl font-bold md:w-[80%] w-[95%] text-center"
       >
         Management Events
       </h1>
