@@ -7,7 +7,7 @@ import { EffectCoverflow, Pagination, Autoplay } from 'swiper/modules';
 import { useState } from 'react';
 import { Modal } from '../../Components/Modal';
 
-export default function Slider() {
+export default function Slider({ start=0, end=3 }) {
   const [isOpen, setIsOpen] = useState(false);
   const [selectedEvent, setSelectedEvent] = useState(null);
 
@@ -70,54 +70,57 @@ export default function Slider() {
         className="mySwiper"
       >
         {photos.map((_, index) => (
-          <SwiperSlide key={index}>
-            <div
-              style={{
-                width: '80%',
-                height: '100%',
-                background: `linear-gradient(135deg, hsl(${210 + (index * 15) % 30}, 50%, 30%) 0%, hsl(${220 + (index * 10) % 40}, 40%, 20%) 100%)`,
-                display: 'flex',
-                justifyContent: 'space-evenly',
-                alignItems: 'center',
-                color: '#f5f5f5',
-                fontSize: '20px',
-                fontWeight: 'bold',
-                borderRadius: '12px',
-                flexDirection: 'column',
-                border: "3px solid rgba(212, 175, 55, 0.8)", // Muted gold border
-                padding: '20px',
-                boxShadow: '0px 4px 10px rgba(0, 0, 0, 0.3)'
-              }}
-            >
-              <div className='w-24 h-24 rounded-full overflow-hidden object-cover' style={{ border: "3px solid #f5f5f5" }}>
-                <img src={`/imgs/events/${photos[index]}`} alt="" />
-              </div>
-              <div className='text-center mt-3'>
-                {eventDetails[index][0]} <br />
-                ({eventDetails[index][eventDetails[index].length - 1]})
-              </div>
-
-              <button
-                onClick={() => openModal(index)}
+          index >= start && index <= end && (
+            <SwiperSlide key={index}>
+              <div
                 style={{
-                  background: `linear-gradient(135deg, hsl(${210 + (index * 10) % 30}, 60%, 40%) 0%, hsl(${220 + (index * 5) % 40}, 50%, 30%) 100%)`,
-                  border: "2px solid rgba(212, 175, 55, 0.8)",
-                  padding: "10px 15px",
-                  borderRadius: "8px",
-                  fontSize: "14px",
-                  fontWeight: "bold",
-                  color: "#fff",
-                  textTransform: "uppercase",
-                  cursor: "pointer",
-                  transition: "all 0.3s ease",
+                  width: '80%',
+                  height: '100%',
+                  background: `linear-gradient(135deg, hsl(${210 + (index * 15) % 30}, 50%, 30%) 0%, hsl(${220 + (index * 10) % 40}, 40%, 20%) 100%)`,
+                  display: 'flex',
+                  justifyContent: 'space-evenly',
+                  alignItems: 'center',
+                  color: '#f5f5f5',
+                  fontSize: '20px',
+                  fontWeight: 'bold',
+                  borderRadius: '12px',
+                  flexDirection: 'column',
+                  border: "3px solid rgba(212, 175, 55, 0.8)", // Muted gold border
+                  padding: '20px',
+                  boxShadow: '0px 4px 10px rgba(0, 0, 0, 0.3)'
                 }}
-                className='hover:opacity-80'
               >
-                Read more
-              </button>
-            </div>
-          </SwiperSlide>
+                <div className='w-24 h-24 rounded-full overflow-hidden object-cover' style={{ border: "3px solid #f5f5f5" }}>
+                  <img src={`/imgs/events/${photos[index]}`} alt="" />
+                </div>
+                <div className='text-center mt-3'>
+                  {eventDetails[index][0]} <br />
+                  ({eventDetails[index][eventDetails[index].length - 1]})
+                </div>
+
+                <button
+                  onClick={() => openModal(index)}
+                  style={{
+                    background: `linear-gradient(135deg, hsl(${210 + (index * 10) % 30}, 60%, 40%) 0%, hsl(${220 + (index * 5) % 40}, 50%, 30%) 100%)`,
+                    border: "2px solid rgba(212, 175, 55, 0.8)",
+                    padding: "10px 15px",
+                    borderRadius: "8px",
+                    fontSize: "14px",
+                    fontWeight: "bold",
+                    color: "#fff",
+                    textTransform: "uppercase",
+                    cursor: "pointer",
+                    transition: "all 0.3s ease",
+                  }}
+                  className='hover:opacity-80'
+                >
+                  Read more
+                </button>
+              </div>
+            </SwiperSlide>
+          )
         ))}
+
 
       </Swiper>
 
