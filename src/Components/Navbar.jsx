@@ -30,6 +30,7 @@ export const Navbar = () => {
         <a className="tracking-wide hover:text-lime-500 hover:scale-110 transition-all duration-300" href="#events">Events</a>
         <a className="tracking-wide hover:text-lime-500 hover:scale-110 transition-all duration-300" href="#rules">Rules</a>
         <a className="tracking-wide hover:text-lime-500 hover:scale-110 transition-all duration-300" href="#contact">Contact</a>
+        <a className="tracking-wide hover:text-lime-500 hover:scale-110 transition-all duration-300" href="/pdf/brochure.pdf">Brochure</a>
       </div>
 
       <i className='bx bx-menu text-4xl md:hidden' onClick={() => setDisplay(!display)}></i>
@@ -41,7 +42,7 @@ export const Navbar = () => {
           <a onClick={hideNav} className="tracking-widest py-3 hover:text-lime-500 transition-all duration-300" href="#events">Events</a>
           <a onClick={hideNav} className="tracking-widest py-3 hover:text-lime-500 transition-all duration-300" href="#rules">Rules</a>
           <a onClick={hideNav} className="tracking-widest py-3 hover:text-lime-500 transition-all duration-300" href="#contact">Contact</a>
-          <a onClick={() => window.location.href = "/pdf/brochure.pdf"} className="tracking-widest py-3 hover:text-lime-500 transition-all duration-300">Brochure</a>
+          <a onClick={hideNav} href="/pdf/brochure.pdf" className="tracking-widest py-3 hover:text-lime-500 transition-all duration-300">Brochure</a>
         </div>
       )}
     </nav>
