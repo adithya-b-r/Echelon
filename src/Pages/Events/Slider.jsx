@@ -63,7 +63,7 @@ export default function Slider({ start = 0, end = 3, type = 0 }) {
           slideShadows: false,
         }}
         autoplay={{
-          delay: 1000,
+          delay: 2000,
           disableOnInteraction: false,
         }}
         loop={true}
