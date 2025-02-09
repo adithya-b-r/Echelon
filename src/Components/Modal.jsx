@@ -1,5 +1,7 @@
-export const Modal = ({ isOpen, onClose, event }) => {
+export const Modal = ({ isOpen, onClose, event, type }) => {
   if (!isOpen) return null;
+
+  console.log(event.type);
 
   return (
     <div
@@ -36,17 +38,28 @@ export const Modal = ({ isOpen, onClose, event }) => {
           </h3>
 
           <div className="w-full h-fit mt-5 px-5">
-            <h3 className="text-xl font-semibold tracking-wider">
+            <h3 className="text-xl font-semibold tracking-wider text-orange-400">
               General Rules:
             </h3>
             <div className="ml-4 text-lg tracking-wide mt-2">
-              <p>1. Under Construction</p>
-              <p>2. Under Construction</p>
+              {event.type === 0 && (
+                <>
+                  <p>1. This event is exclusively for UG students.</p>
+                  <p>2. The participation fee is Rs. 150 per person.</p>
+                </>
+              )}
+              {event.type === 1 && (
+                <>
+                  <p>1. This event is open to both UG and PG students.</p>
+                  <p>2. The participation fee is Rs. 100 per person.</p>
+                </>
+              )}
             </div>
+
           </div>
 
           <div className="w-full h-fit mt-6 px-5">
-            <h3 className="text-xl font-semibold tracking-wider">
+            <h3 className="text-xl font-semibold tracking-wider text-orange-400">
               Event Coordinators:
             </h3>
             <div className="ml-4 text-lg tracking-wide mt-2">

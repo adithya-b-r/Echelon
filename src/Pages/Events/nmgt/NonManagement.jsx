@@ -17,7 +17,7 @@ export const NonManagement = () => {
         Cultural Events
       </h1>
 
-      <Slider start={7} end={13}/>
+      <Slider start={7} end={13} type={1}/>
     </div>
   )
 }

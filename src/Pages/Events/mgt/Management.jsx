@@ -17,7 +17,7 @@ export const Management = () => {
         Management Events
       </h1>
 
-      <Slider start={0} end={6}/>
+      <Slider start={0} end={6} type={0}/>
     </div>
   )
 }

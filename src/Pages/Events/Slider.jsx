@@ -7,7 +7,7 @@ import { EffectCoverflow, Pagination, Autoplay } from 'swiper/modules';
 import { useState } from 'react';
 import { Modal } from '../../Components/Modal';
 
-export default function Slider({ start=0, end=3 }) {
+export default function Slider({ start = 0, end = 3, type = 0 }) {
   const [isOpen, setIsOpen] = useState(false);
   const [selectedEvent, setSelectedEvent] = useState(null);
 
@@ -26,8 +26,8 @@ export default function Slider({ start=0, end=3 }) {
     ["ECO QUEST", "2", "Nandana Ashok - 6235877850", "Aswathi T K - 9567997656", "BUSINESS QUIZ"],
     ["ECO LEAD", "3", "Nidhi Shetty - 6366162401", "Renita Dsouza - 9663347984", "BMT"],
     ["SPECTRA", "2", "Shreevatsa - 8660049762", "Sushmitha Amin - 9834063924", "BRAND RANGOLI"],
-    ["ZENBLAZE", "4-8", "Prajna Kundar - 9110464528", "03 AURA Raksha T - 9945138003", "CORPORATE WALK"],
-    ["AURA", "1", "Prakrithiji - 8277091324", "SPOT DANCE"],  // Missing category, fixing it
+    ["ZENBLAZE", "4-8", "Prajna Kundar - 9110464528", "Raksha T - 9945138003", "CORPORATE WALK"],
+    ["AURA", "1", "Prakrithiji - 8277091324", "SPOT DANCE"],
     ["HIDDEN TRAIL", "2", "Akhilesh - 8105456871", "Puneeth G Mallaya - 8792009632", "TREASURE HUNT"],
     ["IRIS", "2", "Vishnu Ashok - 7034069185", "Naijin Johny - 9380727878", "PHOTOGRAPHY"],
     ["CINEQUEST", "2", "Hisham Hussain - 7338549200", "Abhin - 9731445371", "MOVIE QUIZ"],
@@ -40,10 +40,12 @@ export default function Slider({ start=0, end=3 }) {
       category: eventDetails[index][eventDetails[index].length - 1],
       image: `/imgs/events/${photos[index]}`,
       participants: eventDetails[index][1],
-      coordinators: eventDetails[index].slice(2, -1)
+      coordinators: eventDetails[index].slice(2, -1),
+      type: type,
     });
     setIsOpen(true);
   };
+
 
   return (
     <>
