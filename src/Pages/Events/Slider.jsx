@@ -17,51 +17,33 @@ export default function Slider() {
     "hidden.jpeg", "iris.jpeg", "inequest.jpeg", "advenger.jpeg"
   ];
 
-  // const eventName = [
-  //   "ECO FINOVATE",
-  //   "ECONEXA",
-  //   "ECO AdVentureX",
-  //   "ECO SPARK",
-  //   "ECO ICON",
-  //   "ECO QUEST",
-  //   "ECO LEAD",
-  //   "SPECTRA",
-  //   "ZENBLAZE",
-  //   "AURA",
-  //   "HIDDEN TRAIL",
-  //   "IRIS",
-  //   "CINEQUEST",
-  //   "AD-VENGERS"
-  // ];
-
   const eventDetails = [
-    ["ECO FINOVATE", "2", "Suneetha J - 8867648433", "Ramananda Shetty - 8088896489", "FINANCE",],
-    ["ECO NEXA", "2", "Saksha S - 8867341607", "Meghashree - 9353911520", "HR",],
-    ["ECO AdVentureX", "2", "Prajith - 8296750765", "Sneha Lunkad - 78995 49820", "Marketing",],
-    ["ECO SPARK", "3", "Prathiksha Shetty - 8496016583", "Sangeetha P S - 9900687579", "Spark Tank",],
-    ["ECO ICON", "1", "Harsha - 6361574092", "Minaz - 9353615484", "BEST MANAGER",],
-    ["ECO QUEST", "2", "Nandana Ashok - 6235877850", "Aswathi T K - 9567997656", "BUSINESS QUIZ",],
-    ["ECO LEAD", "3", " Nidhi Shetty - 6366162401", "Renita Dsouza - 9663347984", "BMT",],
-    ["SPECTRA", "2", "Shreevatsa - 8660049762", "Sushmitha Amin - 9834063924", "BRAND RANGOLI",],
-    ["ZENBLAZE", "4-8", "Prajna Kundar - 9110464528", "03 AURA Raksha T - 9945138003", "CORPORATE WALK",],
-    ["AURA", "1", "Prakrithiji - 8277091324", "SPOT DANCE",],
-    ["HIDDEN TRAIL", "2", "Akhilesh - 8105456871", "Puneeth G Mallaya - 8792009632", "TREASURE HUNT",],
-    ["IRIS", "2", "Vishnu Ashok- 7034069185", "Naijin Johny - 9380727878", "PHOTOGRAPHY",],
-    ["CINEQUEST", "2", "Hisham Hussain - 7338549200", "Abhin - 9731445371", "MOVIE QUIZ",],
-    ["AD-VENGERS", "4-6", "Nishimura - 7619531629", "Shruthi - 8431742695", "MAD AD"],
+    ["ECO FINOVATE", "2", "Suneetha J - 8867648433", "Ramananda Shetty - 8088896489", "FINANCE"],
+    ["ECO NEXA", "2", "Saksha S - 8867341607", "Meghashree - 9353911520", "HR"],
+    ["ECO AdVentureX", "2", "Prajith - 8296750765", "Sneha Lunkad - 78995 49820", "MARKETING"],
+    ["ECO SPARK", "3", "Prathiksha Shetty - 8496016583", "Sangeetha P S - 9900687579", "SPARK TANK"],
+    ["ECO ICON", "1", "Harsha - 6361574092", "Minaz - 9353615484", "BEST MANAGER"],
+    ["ECO QUEST", "2", "Nandana Ashok - 6235877850", "Aswathi T K - 9567997656", "BUSINESS QUIZ"],
+    ["ECO LEAD", "3", "Nidhi Shetty - 6366162401", "Renita Dsouza - 9663347984", "BMT"],
+    ["SPECTRA", "2", "Shreevatsa - 8660049762", "Sushmitha Amin - 9834063924", "BRAND RANGOLI"],
+    ["ZENBLAZE", "4-8", "Prajna Kundar - 9110464528", "03 AURA Raksha T - 9945138003", "CORPORATE WALK"],
+    ["AURA", "1", "Prakrithiji - 8277091324", "SPOT DANCE"],  // Missing category, fixing it
+    ["HIDDEN TRAIL", "2", "Akhilesh - 8105456871", "Puneeth G Mallaya - 8792009632", "TREASURE HUNT"],
+    ["IRIS", "2", "Vishnu Ashok - 7034069185", "Naijin Johny - 9380727878", "PHOTOGRAPHY"],
+    ["CINEQUEST", "2", "Hisham Hussain - 7338549200", "Abhin - 9731445371", "MOVIE QUIZ"],
+    ["AD-VENGERS", "4-6", "Nishimura - 7619531629", "Shruthi - 8431742695", "MAD AD"]
   ];
 
   const openModal = (index) => {
     setSelectedEvent({
       name: eventDetails[index][0],
-      category: eventDetails[index][4],
+      category: eventDetails[index][eventDetails[index].length - 1],
       image: `/imgs/events/${photos[index]}`,
       participants: eventDetails[index][1],
-      coordinators: eventDetails[index].slice(2)
+      coordinators: eventDetails[index].slice(2, -1)
     });
     setIsOpen(true);
   };
-
 
   return (
     <>
@@ -93,38 +75,50 @@ export default function Slider() {
               style={{
                 width: '80%',
                 height: '100%',
-                backgroundColor: `hsl(${index * 69}, 70%, 50%)`,
+                background: `linear-gradient(135deg, hsl(${210 + (index * 15) % 30}, 50%, 30%) 0%, hsl(${220 + (index * 10) % 40}, 40%, 20%) 100%)`,
                 display: 'flex',
-                justifyContent: 'center',
+                justifyContent: 'space-evenly',
                 alignItems: 'center',
-                color: '#fff',
+                color: '#f5f5f5',
                 fontSize: '20px',
                 fontWeight: 'bold',
-                borderRadius: '10px',
+                borderRadius: '12px',
                 flexDirection: 'column',
-                alignItems: 'center',
-                justifyContent: 'space-evenly',
-                border: "5px ridge white"
+                border: "3px solid rgba(212, 175, 55, 0.8)", // Muted gold border
+                padding: '20px',
+                boxShadow: '0px 4px 10px rgba(0, 0, 0, 0.3)'
               }}
             >
-              <div className='w-24 h-24 rounded-full bg-pink-500 overflow-hidden object-cover' style={{ border: "#fff ridge 4px" }}>
+              <div className='w-24 h-24 rounded-full overflow-hidden object-cover' style={{ border: "3px solid #f5f5f5" }}>
                 <img src={`/imgs/events/${photos[index]}`} alt="" />
               </div>
-              <div className='text-center'>
+              <div className='text-center mt-3'>
                 {eventDetails[index][0]} <br />
-                {eventDetails[index][4]}
+                ({eventDetails[index][eventDetails[index].length - 1]})
               </div>
 
               <button
                 onClick={() => openModal(index)}
-                style={{ backgroundColor: `hsl(${index * 50}, 70%, 50%)` }}
-                className='px-4 py-2 text-sm text-white font-semibold border-2 border-white capitalize rounded-lg tracking-wider'
+                style={{
+                  background: `linear-gradient(135deg, hsl(${210 + (index * 10) % 30}, 60%, 40%) 0%, hsl(${220 + (index * 5) % 40}, 50%, 30%) 100%)`,
+                  border: "2px solid rgba(212, 175, 55, 0.8)",
+                  padding: "10px 15px",
+                  borderRadius: "8px",
+                  fontSize: "14px",
+                  fontWeight: "bold",
+                  color: "#fff",
+                  textTransform: "uppercase",
+                  cursor: "pointer",
+                  transition: "all 0.3s ease",
+                }}
+                className='hover:opacity-80'
               >
                 Read more
               </button>
             </div>
           </SwiperSlide>
         ))}
+
       </Swiper>
 
       {isOpen && selectedEvent && <Modal isOpen={isOpen} onClose={() => setIsOpen(false)} event={selectedEvent} />}
