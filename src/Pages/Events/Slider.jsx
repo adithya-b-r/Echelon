@@ -87,7 +87,7 @@ export default function Slider({ start = 0, end = 3, type = 0 }) {
                   fontWeight: 'bold',
                   borderRadius: '12px',
                   flexDirection: 'column',
-                  border: "3px solid rgba(212, 175, 55, 0.8)", // Muted gold border
+                  border: "3px solid rgba(212, 175, 55, 0.8)",
                   padding: '20px',
                   boxShadow: '0px 4px 10px rgba(0, 0, 0, 0.3)'
                 }}
