@@ -14,7 +14,7 @@ export default function Slider({ start = 0, end = 3, type = 0 }) {
   const photos = [
     "ecofindvate.jpeg", "econexa.jpg", "ecoadebturex.jpeg", "ecospark.jpg", "ecoicon.jpeg",
     "ecoquest.jpeg", "ecolead.jpeg", "spectra.jpeg", "zenblaze.jpeg", "aura.jpeg",
-    "hidden.jpeg", "iris.jpeg", "inequest.jpeg", "advenger.jpeg"
+    "hidden.jpeg", "advenger.jpeg", "iris.jpeg ", "inequest.jpeg"
   ];
 
   const eventDetails = [
@@ -63,10 +63,10 @@ export default function Slider({ start = 0, end = 3, type = 0 }) {
           modifier: 1,
           slideShadows: false,
         }}
-        // autoplay={{
-        //   delay: 2000,
-        //   disableOnInteraction: true,
-        // }}
+        autoplay={{
+          delay: 3000,
+          disableOnInteraction: true,
+        }}
         loop={true}
         pagination={true}
         modules={[EffectCoverflow, Pagination, Autoplay]}

@@ -2,18 +2,26 @@ export const Contact = () => {
   return (
     <>
       <div id="contact" className="w-full bg-gray-900 md:flex md:flex-row flex-col text-white px-6 py-10 justify-between">
-        <div className="mb-7 flex gap-1">
-          <div className="text-xl font-semibold capitalize leading-[5vh]">
-            <img className="w-16 h-16 rounded-full" src="/imgs/sdit.png" alt="" />
-          </div>
+        <div className="md:mb-0 mb-5 flex flex-col md:w-[30%] w-[100%] md:ml-24 leading-loose text-center md:text-left">
+          <h3 className="md:mt-4 mb-4 font-bold text-2xl capitalize">Connect with us</h3>
 
-          <div>
-            <p className="text-xl font-bold md:mb-4 md:mt-4 tracking-wider">Shree Devi Institute of Technology</p>
-            <p className="text-sm leading-[5vh] font-semibold tracking-wider"> Airport Road, Kenjar,
-              Mangalore - 574142,
-              <br />Karnataka State, India.</p>
-          </div>
+          <a href="https://sdit.ac.in/" className="inline-flex items-center justify-center md:justify-start gap-1 tracking-wide hover:text-blue-500 transition-all duration-300 text-lg font-semibold py-1">
+            <i className="text-xl bx bx-globe"></i> SDIT Official
+          </a>
+
+          <a href="https://www.instagram.com/echelon_2025/" className="inline-flex items-center justify-center md:justify-start gap-1 tracking-wide hover:text-blue-500 transition-all duration-300 text-lg font-semibold py-1">
+            <i className="text-xl bx bxl-instagram"></i> echelon_2025
+          </a>
+
+          <a href="https://www.instagram.com/sdit_mba_official/" className="inline-flex items-center justify-center md:justify-start gap-1 tracking-wide hover:text-blue-500 transition-all duration-300 text-lg font-semibold py-1">
+            <i className="text-xl bx bxl-instagram"></i> sdit_mba_official
+          </a>
+
+          <a href="https://www.facebook.com/SDITMBA/" className="inline-flex items-center justify-center md:justify-start gap-1 tracking-wide hover:text-blue-500 transition-all duration-300 text-lg font-semibold py-1">
+            <i className="text-xl bx bxl-facebook-circle"></i> SDIT MBA
+          </a>
         </div>
+
 
         <div className="flex flex-col md:w-[30%] w-[100%] md:ml-24 leading-relaxed md:text-left text-center">
           <h3 className="md:mt-4 mb-4 font-bold text-2xl">Quick Links</h3>
