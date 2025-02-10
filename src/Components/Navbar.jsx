@@ -28,7 +28,7 @@ export const Navbar = () => {
       <i className='bx bx-menu text-4xl md:hidden' onClick={() => setDisplay(!display)}></i>
 
       {display && (
-        <div className="fixed top-16 bg-gray-950 w-[100%] h-fit -mx-6 flex flex-col items-center text-2xl">
+        <div className="fixed top-16 bg-white text-black font-semibold w-[100%] h-fit -mx-6 flex flex-col items-center text-2xl">
           <a onClick={hideNav} className="text-lg tracking-widest py-3 hover:text-blue-700 transition-all duration-300" href="#home">Home</a>
           <a onClick={hideNav} className="text-lg tracking-widest py-3 hover:text-blue-700 transition-all duration-300" href="#about">About</a>
           <a onClick={hideNav} className="text-lg tracking-widest py-3 hover:text-blue-700 transition-all duration-300" href="#events">Events</a>

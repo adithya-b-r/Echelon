@@ -25,11 +25,11 @@ export const Contact = () => {
 
         <div className="flex flex-col md:w-[30%] w-[100%] md:ml-24 leading-relaxed md:text-left text-center">
           <h3 className="md:mt-4 mb-4 font-bold text-2xl">Quick Links</h3>
-          <a className="tracking-wide hover:text-lime-500 hover:scale-110 transition-all duration-300" href="#home">Home</a>
-          <a className="tracking-wide hover:text-lime-500 hover:scale-110 transition-all duration-300" href="#about">About</a>
-          <a className="tracking-wide hover:text-lime-500 hover:scale-110 transition-all duration-300" href="#events">Events</a>
-          <a className="tracking-wide hover:text-lime-500 hover:scale-110 transition-all duration-300" href="#rules">Rules</a>
-          <a className="tracking-wide hover:text-lime-500 hover:scale-110 transition-all duration-300" href="#contact">Contact</a>
+          <a className="tracking-wide hover:text-blue-500 hover:scale-110 transition-all duration-300 text-lg font-semibold py-1" href="#home">Home</a>
+          <a className="tracking-wide hover:text-blue-500 hover:scale-110 transition-all duration-300 text-lg font-semibold py-1" href="#about">About</a>
+          <a className="tracking-wide hover:text-blue-500 hover:scale-110 transition-all duration-300 text-lg font-semibold py-1" href="#events">Events</a>
+          <a className="tracking-wide hover:text-blue-500 hover:scale-110 transition-all duration-300 text-lg font-semibold py-1" href="#rules">Rules</a>
+          <a className="tracking-wide hover:text-blue-500 hover:scale-110 transition-all duration-300 text-lg font-semibold py-1" href="#contact">Contact</a>
         </div>
 
         <div className="flex md:w-[33%] w-[100%] h-[30vh] bg-gray-400 rounded-lg overflow-hidden md:mt-0 mt-8">

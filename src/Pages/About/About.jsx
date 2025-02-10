@@ -2,13 +2,13 @@ export const About = () => {
   return (
     <div id="about" className="w-full h-fit bg-transparent text-white font-sans mt-[10vh] mb-[2vh]">
       <div className="w-full px-2 sm:px-2 md:px-8 lg:px-12 xl:px-16">
-        <div className="p-6 md:p-10 rounded-xl border-[3px] border-lime-500 bg-black bg-opacity-70 w-full">
+        <div className="p-6 md:p-10 rounded-xl border-[3px] border-blue-500 bg-black bg-opacity-70 w-full">
           <h1 className="capitalize text-center font-semibold text-3xl md:text-5xl mb-4 tracking-widest">About College</h1>
           <p className=" indent-8 md:indent-12 break-normal">
-            Shree Devi Institute of Technology, Kenjar, Mangaluru, affiliated with Visvesvaraya Technological University, Belagavi, recognized by All India Technical Education (AICTE), New Delhi was established by Shree Devi Education Trust Mangaluru in the year 2006. Our institution aims to provide students with a rich and prosperous learning environment so that they acquire the knowledge in skills needed for succeeding in their professional as well as personal lives.
+            Shree Devi Institute of Technology, Kenjar, Mangaluru, affiliated to Visvesvaraya Technological University, Belagavi, recognized by All India Council for Technical Education (AICTE), New Delhi was established by Shree Devi Education Trust Mangaluru in the year 2006. Our institution stands as a beacon of academic brilliance in the field of Engineering, Management and Computer Application. Established with a vision to nurture future innovators and problem solvers, the institute has consistently upheld its commitment to excellence since its inception.
           </p>
           <p className=" indent-8 md:indent-12 mt-2 break-normal">
-            This institution offers students the opportunity to pursue engineering, management and computer studies in the ambiance of natural beauty. A team of dedicated  faculty, a brilliant student community, excellent technical and supporting staff and an effective administration have contributed to the pre-eminent status of Shree Devi Institution of Technology.
+            The meticulously designed curriculum integrates theoretical learning with hands-on  experiences ensure the graduates to apply their knowledge to real world challenges. The institute takes pride in it’s  modern infrastructure with state-of-the-art laboratories. Shree Devi Institute of Technology is more than an academic institution, it is a dynamic ecosystem where passion meets purpose, and where the young minds are nurtured to lead, innovate and make a lasting impact on the world.
           </p>
           <h1 className="capitalize text-center font-semibold text-3xl md:text-5xl mb-4 tracking-widest mt-8">About Echelon</h1>
           <p className=" indent-8 md:indent-12 break-normal">
