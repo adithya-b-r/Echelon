@@ -41,6 +41,7 @@ export default function Slider({ start = 0, end = 3, type = 0 }) {
       image: `/imgs/events/${photos[index]}`,
       participants: eventDetails[index][1],
       coordinators: eventDetails[index].slice(2, -1),
+      index: index,
       type: type,
     });
     setIsOpen(true);

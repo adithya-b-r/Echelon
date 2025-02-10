@@ -42,9 +42,15 @@ export const Modal = ({ isOpen, onClose, event, type }) => {
               General Rules:
             </h3>
             <div className="ml-4 text-lg tracking-wide mt-2">
-              {event.type === 0  && (
+              {event.type === 0 && event.index <= 3 && (
                 <>
                   <p>1. This event is open only for PG students.</p>
+                  <p>2. The participation fee is Rs. 150 per person.</p>
+                </>
+              )}
+              {event.type === 0 && event.index > 3 && (
+                <>
+                  <p>1. This event is open to both UG and PG students.</p>
                   <p>2. The participation fee is Rs. 150 per person.</p>
                 </>
               )}

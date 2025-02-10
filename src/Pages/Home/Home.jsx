@@ -6,7 +6,7 @@ export const Home = () => {
 
   return (
     <div id="home" className="w-full h-[90vh] bg-transparent flex flex-col items-center scroll-mt-[10vh]">
-      <h1 className='md:text-3xl text-2xl text-white text-center leading-loose md:font-extrabold font-bold drop-shadow-2xl'>
+      <h1 className='md:text-3xl md:mt-5 text-2xl text-white text-center leading-loose md:font-extrabold font-bold drop-shadow-2xl'>
         DEPARTMENT OF MASTER OF BUSINESS ADMINISTRATION <br />
         <span className='text-2xl font-normal md:font-semibold drop-shadow-md'>PRESENTS</span>
       </h1>
