@@ -18,20 +18,20 @@ export default function Slider({ start = 0, end = 3, type = 0 }) {
   ];
 
   const eventDetails = [
-    ["ECO FINOVATE", "2", "Suneetha J - 8867648433", "Ramananda Shetty - 8088896489", "FINANCE"],
-    ["ECO NEXA", "2", "Saksha S - 8867341607", "Meghashree - 9353911520", "HR"],
-    ["ECO AdVentureX", "2", "Prajith - 8296750765", "Sneha Lunkad - 78995 49820", "MARKETING"],
-    ["ECO SPARK", "3", "Prathiksha Shetty - 8496016583", "Sangeetha P S - 9900687579", "SPARK TANK"],
-    ["ECO ICON", "1", "Harsha - 6361574092", "Minaz - 9353615484", "BEST MANAGER"],
-    ["ECO QUEST", "2", "Nandana Ashok - 6235877850", "Aswathi T K - 9567997656", "BUSINESS QUIZ"],
-    ["ECO LEAD", "3", "Nidhi Shetty - 6366162401", "Renita Dsouza - 9663347984", "BMT"],
-    ["SPECTRA", "2", "Shreevatsa - 8660049762", "Sushmitha Amin - 9834063924", "BRAND RANGOLI"],
-    ["ZENBLAZE", "4-8", "Prajna Kundar - 9110464528", "Raksha T - 9945138003", "CORPORATE WALK"],
-    ["AURA", "1", "Prakrithiji - 8277091324", "SPOT DANCE"],
+    ["ECO FINOVATE", "2", "Suneetha J - 8867648433", "Ramananda Shetty - 8088896489", "FINANCE"], //pg
+    ["ECO NEXA", "2", "Saksha S - 8867341607", "Meghashree - 9353911520", "HR"], //pg
+    ["ECO AdVentureX", "2", "Prajith - 8296750765", "Sneha Lunkad - 78995 49820", "MARKETING"], //pg
+    ["ECO SPARK", "3", "Prathiksha Shetty - 8496016583", "Sangeetha P S - 9900687579", "SPARK TANK"], //pg
+    ["ECO ICON", "1", "Harsha - 6361574092", "Minaz - 9353615484", "BEST MANAGER"], //pg & ug
+    ["ECO QUEST", "2", "Nandana Ashok - 6235877850", "Aswathi T K - 9567997656", "BUSINESS QUIZ"], //pg & ug
+    ["ECO LEAD", "3", "Nidhi Shetty - 6366162401", "Renita Dsouza - 9663347984", "BMT"], //pg & ug
+    ["SPECTRA", "2", "Shreevatsa - 8660049762", "Sushmitha Amin - 9834063924", "BRAND RANGOLI"], //pg & ug
+    ["ZENBLAZE", "4-8", "Prajna Kundar - 9110464528", "Raksha T - 9945138003", "CORPORATE WALK"], //
+    ["AURA", "1", "Prakruthiji - 8277091324", "SPOT DANCE"],
     ["HIDDEN TRAIL", "2", "Akhilesh - 8105456871", "Puneeth G Mallaya - 8792009632", "TREASURE HUNT"],
+    ["AD-VENGERS", "4-6", "Nishimura - 7619531629", "Shruthi - 8431742695", "MAD AD"],
     ["IRIS", "2", "Vishnu Ashok - 7034069185", "Naijin Johny - 9380727878", "PHOTOGRAPHY"],
     ["CINEQUEST", "2", "Hisham Hussain - 7338549200", "Abhin - 9731445371", "MOVIE QUIZ"],
-    ["AD-VENGERS", "4-6", "Nishimura - 7619531629", "Shruthi - 8431742695", "MAD AD"]
   ];
 
   const openModal = (index) => {
