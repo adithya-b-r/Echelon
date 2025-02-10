@@ -1,7 +1,7 @@
 export const Modal = ({ isOpen, onClose, event, type }) => {
   if (!isOpen) return null;
 
-  console.log(event.type);
+  console.log(event.coordinators.length)
 
   return (
     <div
@@ -72,7 +72,14 @@ export const Modal = ({ isOpen, onClose, event, type }) => {
 
           <div className="w-full h-fit mt-6 px-5">
             <h3 className="text-xl font-semibold tracking-wider text-orange-400">
-              Event Coordinators:
+              {event.coordinators.length > 1 && (
+                <>Event Coordinators:</>
+              )}
+
+              {event.coordinators.length <= 1 && (
+                <>Event Coordinator:</>
+              )}
+
             </h3>
             <div className="ml-4 text-lg tracking-wide mt-2">
               <div className="flex flex-col md:flex-row justify-between md:px-5">
