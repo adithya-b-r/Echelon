@@ -12,7 +12,7 @@ export const Navbar = () => {
       <div className="flex gap-2 items-center">
         <img src="/imgs/sdit.png" className="h-16 w-16 rounded-full" alt="" />
         <h1 className="md:text-2xl text-lg md:tracking-wider tracking-tighter font-extrabold cursor-pointer uppercase text-blue-700">
-          Shree Devi <br /> Institute of Technology
+          Shree Devi <span className="hidden md:inline"> <br /> </span> Institute of Technology
         </h1>
       </div>
 
