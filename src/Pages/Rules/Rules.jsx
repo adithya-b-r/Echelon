@@ -9,12 +9,12 @@ export const Rules = () => {
           <h2 className="text-3xl font-semibold text-blue-400 text-center md:text-left">Management Events</h2>
           <ul className="list-disc pl-6 mt-3 space-y-2 text-sm md:text-base">
             <li>Any number of participants from a college can participate for the event.</li>
-            <li>The event is open for UG - (BMT, BM, Business Quiz) & PG - (BMT, BM, Business Quiz, HR, Marketing, Finance, Spark Tank)</li>
+            <li>The event is open to UG - (BMT, BM, Business Quiz) & PG - (BMT, BM, Business Quiz, HR, Marketing, Finance, Spark Tank)</li>
             <li>The registration fee for the event is <span className="text-yellow-300">Rs. 150 per participant.</span></li>
             <li>Participants should carry laptop, calculator, net setters, pen drives etc., for their use. The organisers shall not be responsible for   providing any of these items.</li>
             <li>Judges and the organisers decision will be final and binding.</li>
             <li>Any team found using unfair means shall be immediately disqualified.</li>
-            <li>To keep your identity confidential, participants are supposed to use the college Code allotted by Echelon team.</li>
+            <li>To keep your identity confidential, participants are supposed to use the college code allotted by Echelon team.</li>
           </ul>
         </div>
 
@@ -27,7 +27,7 @@ export const Rules = () => {
             <li>The registration fee for non-management events is <span className="text-yellow-300">Rs. 100 per participant.</span></li>
             <li>Judges and the organisers decision will be final and binding.</li>
             <li>Any team found using unfair means shall be immediately disqualified.</li>
-            <li>To keep your identity confidential, participants are supposed to use the College Code allotted by Echelon team.</li>
+            <li>To keep your identity confidential, participants are supposed to use the college code allotted by Echelon team.</li>
           </ul>
         </div>
 

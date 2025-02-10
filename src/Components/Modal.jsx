@@ -34,7 +34,13 @@ export const Modal = ({ isOpen, onClose, event, type }) => {
           </h3>
 
           <h3 className="mt-2 text-lg font-medium">
-            Participants: {event.participants}
+            {event.participants == 1 && (
+              <>Participant: {event.participants}</>
+            )}
+
+            {event.participants != 1 && (
+              <>Participants: {event.participants} make a team.</>
+            )}
           </h3>
 
           <div className="w-full h-fit mt-5 px-5">

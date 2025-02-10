@@ -29,7 +29,7 @@ export default function Slider({ start = 0, end = 3, type = 0 }) {
     ["ZENBLAZE", "4-8", "Prajna Kundar - 9110464528", "Raksha T - 9945138003", "CORPORATE WALK"], //
     ["AURA", "1", "Prakruthiji - 8277091324", "SPOT DANCE"],
     ["HIDDEN TRAIL", "2", "Akhilesh - 8105456871", "Puneeth G Mallaya - 8792009632", "TREASURE HUNT"],
-    ["AD-VENGERS", "4-6", "Nishimura - 7619531629", "Shruthi - 8431742695", "MAD AD"],
+    ["AD-VENGERS", "5", "Nishimura - 7619531629", "Shruthi - 8431742695", "MAD AD"],
     ["IRIS", "2", "Vishnu Ashok - 7034069185", "Naijin Johny - 9380727878", "PHOTOGRAPHY"],
     ["CINEQUEST", "2", "Hisham Hussain - 7338549200", "Abhin - 9731445371", "MOVIE QUIZ"],
   ];
