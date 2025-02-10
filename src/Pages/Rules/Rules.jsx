@@ -20,7 +20,7 @@ export const Rules = () => {
 
         {/* Non-Management Events Section */}
         <div className="bg-gray-800 bg-opacity-90 p-6 rounded-lg shadow-lg">
-          <h2 className="text-3xl font-semibold text-green-400 text-center md:text-left">Cultural Events</h2>
+          <h2 className="text-3xl font-semibold text-blue-400 text-center md:text-left">Cultural Events</h2>
           <ul className="list-disc pl-6 mt-3 space-y-2 text-sm md:text-base">
             <li>Any number of participants from a college can participate for the events.</li>
             <li>The event is open to both UG & PG students.</li>
