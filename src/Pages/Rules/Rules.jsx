@@ -8,27 +8,26 @@ export const Rules = () => {
         <div className="bg-gray-800 bg-opacity-90 p-6 rounded-lg shadow-lg">
           <h2 className="text-3xl font-semibold text-blue-400 text-center md:text-left">Management Events</h2>
           <ul className="list-disc pl-6 mt-3 space-y-2 text-sm md:text-base">
-            <li>Unlimited participants per college.</li>
-            <li>Open to UG (BMT, BM, Business Quiz) & PG (BMT, BM, Business Quiz, HR, Marketing, Finance, Spark Tank).</li>
-            <li>Registration fee: <span className="text-yellow-300">Rs. 150 per participant.</span></li>
-            <li>Participants must bring their own laptops, calculators, net setters, pen drives, etc.</li>
-            <li>Organizers are not responsible for providing any materials.</li>
-            <li>Judges' and organizers' decisions are final and binding.</li>
-            <li>Use of unfair means will lead to immediate disqualification.</li>
-            <li>Participants must use team names allotted by the Echelon team for confidentiality.</li>
+            <li>Any number of participants from a college can participate for the event.</li>
+            <li>The event is open for UG - (BMT, BM, Business Quiz) & PG - (BMT, BM, Business Quiz, HR, Marketing, Finance, Spark Tank)</li>
+            <li>The registration fee for the event is <span className="text-yellow-300">Rs. 150 per participant.</span></li>
+            <li>Participants should carry laptop, calculator, net setters, pen drives etc., for their use. The organisers shall not be responsible for   providing any of these items.</li>
+            <li>Judges and the organisers decision will be final and binding.</li>
+            <li>Any team found using unfair means shall be immediately disqualified.</li>
+            <li>To keep your identity confidential, participants are supposed to use the college Code allotted by Echelon team.</li>
           </ul>
         </div>
 
         {/* Non-Management Events Section */}
         <div className="bg-gray-800 bg-opacity-90 p-6 rounded-lg shadow-lg">
-          <h2 className="text-3xl font-semibold text-green-400 text-center md:text-left">Non-Management Events</h2>
+          <h2 className="text-3xl font-semibold text-green-400 text-center md:text-left">Cultural Events</h2>
           <ul className="list-disc pl-6 mt-3 space-y-2 text-sm md:text-base">
-            <li>Unlimited participants per college.</li>
-            <li>Open to both UG & PG students.</li>
-            <li>Registration fee: <span className="text-yellow-300">Rs. 100 per participant.</span></li>
-            <li>Judges' and organizers' decisions are final and binding.</li>
-            <li>Use of unfair means will lead to immediate disqualification.</li>
-            <li>Participants must use team names allotted by the Echelon team for confidentiality.</li>
+            <li>Any number of participants from a college can participate for the events.</li>
+            <li>The event is open to both UG & PG students.</li>
+            <li>The registration fee for non-management events is <span className="text-yellow-300">Rs. 100 per participant.</span></li>
+            <li>Judges and the organisers decision will be final and binding.</li>
+            <li>Any team found using unfair means shall be immediately disqualified.</li>
+            <li>To keep your identity confidential, participants are supposed to use the College Code allotted by Echelon team.</li>
           </ul>
         </div>
 
