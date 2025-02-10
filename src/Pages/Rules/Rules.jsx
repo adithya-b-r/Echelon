@@ -31,6 +31,14 @@ export const Rules = () => {
             <li>Participants must use team names allotted by the Echelon team for confidentiality.</li>
           </ul>
         </div>
+
+        <div className="w-full flex items-center justify-center text-center -mt-8">
+          <button
+            onClick={() => window.location.href = "https://docs.google.com/forms/d/e/1FAIpQLSeYfzn7gJEKVF0oCa9igF8tFl7HQPALjJKyevpMxQS1ATEFzw/viewform?usp=header"}
+            className="bg-blue-500 rounded-md md:w-[50%] w-[70%] h-14  text-3xl text-white mt-16 border-[1px] border-white">
+            Register Now
+          </button>
+        </div>
       </div>
     </div>
   );

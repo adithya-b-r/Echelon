@@ -3,7 +3,7 @@ export const Contact = () => {
     <div id="contact" className="w-full bg-gray-900 md:flex md:flex-row flex-col text-white px-6 py-10 justify-between">
       <div className="mb-7 flex gap-1">
         <div className="text-xl font-semibold capitalize leading-[5vh]">
-          <img className="w-24 h-16" src="/imgs/sdit.png" alt="" />
+          <img className="w-16 h-16 rounded-full" src="/imgs/sdit.png" alt="" />
         </div>
 
         <div>
