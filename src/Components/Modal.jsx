@@ -1,8 +1,6 @@
 export const Modal = ({ isOpen, onClose, event, type }) => {
   if (!isOpen) return null;
 
-  console.log(event.coordinators.length)
-
   return (
     <div
       className="fixed inset-0 z-[100] flex items-center justify-center bg-black bg-opacity-50 font-sans"
