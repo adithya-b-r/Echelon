@@ -55,7 +55,7 @@ export default function Slider({ start = 0, end = 3, type = 0 }) {
         grabCursor={true}
         centeredSlides={true}
         slidesPerView={'auto'}
-        initialSlide={6}
+        initialSlide={3}
         coverflowEffect={{
           rotate: 50,
           stretch: 0,
@@ -63,10 +63,10 @@ export default function Slider({ start = 0, end = 3, type = 0 }) {
           modifier: 1,
           slideShadows: false,
         }}
-        autoplay={{
-          delay: 2000,
-          disableOnInteraction: false,
-        }}
+        // autoplay={{
+        //   delay: 2000,
+        //   disableOnInteraction: true,
+        // }}
         loop={true}
         pagination={true}
         modules={[EffectCoverflow, Pagination, Autoplay]}
