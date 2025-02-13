@@ -25,6 +25,7 @@ export const Rules = () => {
             <li>Any number of participants from a college can participate for the events.</li>
             <li>The event is open to both UG & PG students.</li>
             <li>The registration fee for non-management events is <span className="text-yellow-300">Rs. 100 per participant.</span></li>
+            <li>For the theme contact Event Head one-day prior>.</li>
             <li>Judges and the organisers decision will be final and binding.</li>
             <li>Any team found using unfair means shall be immediately disqualified.</li>
             <li>To keep your identity confidential, participants are supposed to use the college code allotted by Echelon team.</li>
