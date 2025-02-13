@@ -58,6 +58,13 @@ export const Modal = ({ isOpen, onClose, event, type }) => {
                   <p>2. The participation fee is Rs. 150 per person.</p>
                 </>
               )}
+              {event.type === 1 && event.index == 11 && (
+                <>
+                  <p>1. This event is open to both UG and PG students.</p>
+                  <p>2. The participation fee is Rs. 100 per person.</p>
+                  <p>3. For the theme contact Event Head one-day prior.</p>
+                </>
+              )}
               {event.type === 1 && (
                 <>
                   <p>1. This event is open to both UG and PG students.</p>
