@@ -58,7 +58,7 @@ export const Modal = ({ isOpen, onClose, event, type }) => {
                   <p>2. The participation fee is Rs. 150 per person.</p>
                 </>
               )}
-              
+
               {event.type === 1 && (
                 <>
                   <p>1. This event is open to both UG and PG students.</p>
@@ -88,12 +88,16 @@ export const Modal = ({ isOpen, onClose, event, type }) => {
             </h3>
             <div className="ml-4 text-lg tracking-wide mt-2">
               <div className="flex flex-col md:flex-row justify-between md:px-5">
-                {event.coordinators.map((coordinator, i) => (
-                  <div onClick={() => window.location.href = "tel:+91{coordinator.split(' - ')[1]}"} key={i}>
-                    <p className="font-semibold">{coordinator.split(' - ')[0]}</p>
-                    <p>+91 {coordinator.split(' - ')[1]}</p>
-                  </div>
-                ))}
+                {event.coordinators.map((coordinator, i) => {
+                  const [name, phone] = coordinator.split(' - ');
+                  return (
+                    <div onClick={() => window.location.href = `tel:+91${phone}`} key={i}>
+                      <p className="font-semibold">{name}</p>
+                      <p>+91 {phone}</p>
+                    </div>
+                  );
+                })}
+
               </div>
             </div>
           </div>
