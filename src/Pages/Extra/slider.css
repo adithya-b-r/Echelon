@@ -1,0 +1,19 @@
+#extra .swiper {
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+#extra .swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 450px;
+  height: 300px;
+}
+
+@media (max-width: 768px) {
+  #extra .swiper-slide {
+    width: 90%; 
+    height: 250px;
+  }
+}

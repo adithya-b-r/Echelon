@@ -6,6 +6,7 @@ import { About } from './Pages/About/About'
 import { Events } from './Pages/Events/Events'
 import { Rules } from './Pages/Rules/Rules'
 import { Contact } from './Pages/Contact/Contact'
+import { Extra } from './Pages/Extra/Extra'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -17,6 +18,7 @@ function App() {
       <About />
       <Events />
       <Rules />
+      <Extra />
       <Contact />
     </>
   )
