@@ -7,20 +7,20 @@ import { EffectCoverflow, Pagination, Autoplay } from 'swiper/modules';
 
 export const Extra = () => {
   const photos = [
-    "img1.jpeg",
-    "img2.jpeg",
-    "img3.jpeg",
-    "img4.jpeg",
-    "img5.jpeg",
-    "img6.jpeg",
-    "img7.jpeg",
-    "img8.jpeg",
-    "img9.jpeg",
-    "img10.jpeg",
-    "img11.jpeg",
-    "img12.jpeg",
-    "img13.jpeg",
-    "img14.jpeg",
+    "img1.jpg",
+    "img2.jpg",
+    "img3.jpg",
+    "img4.jpg",
+    "img5.jpg",
+    "img6.jpg",
+    "img7.jpg",
+    "img8.jpg",
+    "img9.jpg",
+    "img10.jpg",
+    "img11.jpg",
+    "img12.jpg",
+    "img13.jpg",
+    "img14.jpg",
   ];
 
   return (
