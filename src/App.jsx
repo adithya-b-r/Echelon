@@ -20,6 +20,12 @@ function App() {
       <Rules />
       <Extra />
       <Contact />
+
+      {/* <button
+        onClick={() => window.location.href = "https://docs.google.com/forms/d/e/1FAIpQLSeYfzn7gJEKVF0oCa9igF8tFl7HQPALjJKyevpMxQS1ATEFzw/viewform?usp=header"}
+        className="meow fixed bottom-5 right-5 bg-blue-500 rounded-md md:w-[18%] w-[50%] h-14  text-3xl text-white mt-16 border-[1px] border-white" >
+        Register Now
+      </button> */}
     </>
   )
 }

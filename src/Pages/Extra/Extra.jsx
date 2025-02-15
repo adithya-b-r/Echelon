@@ -25,6 +25,61 @@ export const Extra = () => {
 
   return (
     <div id="extra" className="w-full h-fit bg-transparent flex flex-col items-center scroll-mt-[10vh] my-10">
+      <div className="flex flex-col justify-center items-center gap-6 p-4 w-full max-w-screen-xl mx-auto mb-8">
+        <h1
+          style={{
+            background: "linear-gradient(to right, rgba(0,0,0,0.3), rgba(0,0,0,0.7), rgba(0,0,0,0.3))",
+            color: "#fff",
+            textShadow: "3px 3px 6px rgba(0, 0, 0, 0.8)",
+            WebkitTextStroke: "0.8px royalblue",
+            borderRadius: "12px",
+            padding: "12px 40px"
+          }}
+          className="tracking-wide text-4xl sm:text-4xl md:text-5xl font-bold w-auto text-center flex flex-nowrap items-center justify-center gap-3 px-6"
+        >
+          Featuring
+          <img src="/extra/RATHAN_LOGO.png" className="h-10 sm:h-12 md:h-14 w-auto" alt="Rathan Logo" />
+        </h1>
+
+        <video
+          src="/extra/videos/dj.mp4"
+          className="w-full max-w-[90vw] sm:max-w-[95vw] md:max-w-[80vw] lg:max-w-[70vw] xl:max-w-[100%] h-auto rounded-lg shadow-lg object-cover"
+          playsInline autoPlay loop muted
+        />
+      </div>
+
+      <div className="flex flex-col justify-center items-center gap-6 p-4 w-full max-w-screen-xl mx-auto mb-8">
+        <h1
+          style={{
+            background: "linear-gradient(to right, rgba(0,0,0,0.2), rgba(0,0,0,0.6), rgba(0,0,0,0.2))",
+            color: "#fff",
+            textShadow: "2px 2px 5px rgba(0, 0, 0, 0.7), 0px 0px 10px rgba(0, 0, 0, 0.5)",
+            WebkitTextStroke: ".5px royalblue",
+            borderRadius: "10px",
+            padding: "10px 30px"
+          }}
+          className="tracking-tight text-4xl md:text-5xl font-bold md:w-[80%] w-[95%] text-center"
+        >
+          Featuring Kavshik Suvarna
+        </h1>
+
+        <video
+          src="/extra/videos/kavshik_suvarna.mp4"
+          className="w-full max-w-[90vw] sm:max-w-[95vw] md:max-w-[80vw] lg:max-w-[70vw] xl:max-w-[100%] h-auto rounded-lg shadow-lg object-cover"
+          playsInline autoPlay loop muted
+        />
+      </div>
+
+      <div className="w-full flex items-center justify-center text-center bg-gray-900 bg-opacity-20 md:h-52 h-32 mb-10">
+        <button
+          onClick={() =>
+            (window.location.href = "https://docs.google.com/forms/d/e/1FAIpQLSeYfzn7gJEKVF0oCa9igF8tFl7HQPALjJKyevpMxQS1ATEFzw/viewform?usp=header")}
+          className="bg-blue-500 rounded-md md:w-[50%] w-[70%] h-14 text-3xl text-white border-[1px] border-white shadow-lg shadow-blue-500/50 hover:shadow-xl transition-all duration-300">
+          Register Now
+        </button>
+      </div>
+
+
       <h1
         style={{
           background: "linear-gradient(to right, rgba(0,0,0,0.2), rgba(0,0,0,0.6), rgba(0,0,0,0.2))",
