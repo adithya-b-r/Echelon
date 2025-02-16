@@ -2,7 +2,8 @@ import FlipClockCountdown from '@leenguyen/react-flip-clock-countdown';
 import '@leenguyen/react-flip-clock-countdown/dist/index.css';
 
 export const Home = () => {
-  const END_DATE = new Date("2025-02-27T00:00:00").getTime(); // Fixed end date
+  // Fixed end date
+  const END_DATE = new Date("2025-02-28T00:00:00").getTime(); 
 
   return (
     <div id="home" className="w-full h-[90vh] bg-transparent flex flex-col items-center scroll-mt-[10vh]">
