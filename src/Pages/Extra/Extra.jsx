@@ -5,6 +5,9 @@ import 'swiper/css/pagination';
 import './slider.css';
 import { EffectCoverflow, Pagination, Autoplay } from 'swiper/modules';
 
+// For Video Mute/Unmuting.
+import { useRef } from "react";
+
 export const Extra = () => {
   const photos = [
     "img1.jpg",
@@ -23,8 +26,22 @@ export const Extra = () => {
     "img14.jpg",
   ];
 
+  const videoRefs = [useRef(null), useRef(null)];
+
+  const toggleMute = (index) => {
+    videoRefs.forEach((ref, i) => {
+      if (ref.current) {
+        if (i === index) {
+          ref.current.muted = !ref.current.muted;
+        } else {
+          ref.current.muted = true;
+        }
+      }
+    });
+  };
+
   return (
-    <div id="extra" className="w-full h-fit bg-transparent flex flex-col items-center scroll-mt-[10vh] my-10">
+    <div id="extra" className="w-full h-fit flex flex-col items-center scroll-mt-[10vh] my-10 bg-gray-900 bg-opacity-30">
       <div className="flex flex-col justify-center items-center gap-6 p-4 w-full max-w-screen-xl mx-auto mb-8">
         <h1
           style={{
@@ -42,8 +59,10 @@ export const Extra = () => {
         </h1>
 
         <video
-          src="/extra/videos/dj.mp4"
+          src="/extra/videos/Rathan.mp4"
           className="w-full max-w-[90vw] sm:max-w-[95vw] md:max-w-[80vw] lg:max-w-[70vw] xl:max-w-[100%] h-auto rounded-lg shadow-lg object-cover"
+          ref={videoRefs[0]}
+          onClick={() => toggleMute(0)}
           playsInline autoPlay loop muted
         />
       </div>
@@ -56,16 +75,19 @@ export const Extra = () => {
             textShadow: "2px 2px 5px rgba(0, 0, 0, 0.7), 0px 0px 10px rgba(0, 0, 0, 0.5)",
             WebkitTextStroke: ".5px royalblue",
             borderRadius: "10px",
-            padding: "10px 30px"
+            padding: "10px 20px"
           }}
-          className="tracking-tight text-4xl md:text-5xl font-bold md:w-[80%] w-[95%] text-center"
+          className="tracking-tighter text-[2.2rem] md:text-5xl font-bold md:w-[80%] w-[100%] text-center leading-snug"
         >
-          Featuring Kaushik Suvarna
+          Dancing Sensation
+          Kaushik Suvarna
         </h1>
 
         <video
-          src="/extra/videos/kavshik_suvarna.mp4"
+          src="/extra/videos/Kaushik.mp4"
           className="w-full max-w-[90vw] sm:max-w-[95vw] md:max-w-[80vw] lg:max-w-[70vw] xl:max-w-[100%] h-auto rounded-lg shadow-lg object-cover"
+          ref={videoRefs[1]}
+          onClick={() => toggleMute(1)}
           playsInline autoPlay loop muted
         />
       </div>
@@ -91,7 +113,7 @@ export const Extra = () => {
         }}
         className="tracking-widest text-4xl md:text-5xl font-bold md:w-[80%] w-[95%] text-center"
       >
-        Glimpse Of Echelon'24
+        Glimpse Of Echelon
       </h1>
 
       <Swiper

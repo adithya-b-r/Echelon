@@ -8,10 +8,10 @@ export const Navbar = () => {
   }
 
   return (
-    <nav className="w-[100%] h-[10vh] bg-white text-black fixed top-0 left-0 flex items-center justify-between px-6">
+    <nav className="w-[100%] h-[10vh] bg-white text-black fixed top-0 left-0 flex items-center justify-between px-4 overflow-hidden">
       <div className="flex gap-2 items-center">
         <img src="/imgs/sdit.png" className="h-16 w-16 rounded-full" alt="" />
-        <h1 className="md:text-2xl text-lg md:tracking-wider tracking-tighter font-extrabold cursor-pointer uppercase text-blue-700">
+        <h1 className="md:text-xl text-lg md:tracking-wider tracking-tighter font-extrabold cursor-pointer uppercase text-blue-700">
           Shree Devi <span className="hidden md:inline"> <br /> </span> Institute of Technology
         </h1>
       </div>

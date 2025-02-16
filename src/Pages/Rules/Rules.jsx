@@ -3,7 +3,7 @@ export const Rules = () => {
     <div id="rules" className="w-full min-h-screen bg-gray-900 bg-opacity-20 text-white py-16 px-6 flex flex-col items-center">
       <h1 className="text-5xl font-bold text-white mb-8 text-center">Rules & Regulations</h1>
 
-      <div className="max-w-4xl w-full space-y-6 px-4 md:px-8 lg:px-12">
+      <div className="max-w-5xl w-full space-y-6 px-4 md:px-8 lg:px-12">
         {/* Management Events Section */}
         <div className="bg-gray-800 bg-opacity-90 p-6 rounded-lg shadow-lg">
           <h2 className="text-3xl font-semibold text-blue-400 text-center md:text-left">Management Events</h2>
