@@ -60,7 +60,7 @@ export const Extra = () => {
           }}
           className="tracking-tight text-4xl md:text-5xl font-bold md:w-[80%] w-[95%] text-center"
         >
-          Featuring Kavshik Suvarna
+          Featuring Kaushik Suvarna
         </h1>
 
         <video
