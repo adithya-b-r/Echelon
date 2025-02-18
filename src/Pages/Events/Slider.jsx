@@ -81,7 +81,7 @@ export default function Slider({ start = 0, end = 3, type = 0 }) {
                   height: '100%',
                   background: `linear-gradient(135deg, hsl(${210 + (index * 15) % 30}, 50%, 30%) 0%, hsl(${220 + (index * 10) % 40}, 40%, 20%) 100%)`,
                   display: 'flex',
-                  justifyContent: 'space-evenly',
+                  justifyContent: 'space-around',
                   alignItems: 'center',
                   color: '#f5f5f5',
                   fontSize: '20px',
